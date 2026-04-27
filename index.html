@@ -1,0 +1,2210 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoFi Wiki - Elementia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white">
+    <div class="min-h-screen flex">
+        <!-- Sidebar -->
+        <aside class="w-64 border-r border-gray-200 bg-gray-50">
+            <div class="p-4 border-b border-gray-200 bg-white">
+                <a href="index.html" class="flex items-center gap-2">
+                    <span class="text-2xl">📚</span>
+                    <div>
+                        <p class="text-xs text-gray-500">FoFi Wiki</p>
+                    </div>
+                </a>
+            </div>
+            
+            <nav class="p-4 space-y-1">
+                <a href="index.html" class="flex items-center gap-3 px-3 py-2 rounded-md bg-blue-100 text-blue-700 font-medium">
+                    <span>📚</span>
+                    Página Inicial
+                </a>
+                <a href="elements.html" class="flex items-center gap-3 px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100">
+                    <span>🔥</span>
+                    Elementos
+                </a>
+                <a href="classes.html" class="flex items-center gap-3 px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100">
+                    <span>⚔️</span>
+                    Classes
+                </a>
+                <a href="spells.html" class="flex items-center gap-3 px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100">
+                    <span>📜</span>
+                    Magias
+                </a>
+                <a href="creatures.html" class="flex items-center gap-3 px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100">
+                    <span>👥</span>
+                    Criaturas
+                </a>
+            </nav>
+            
+            <div class="p-4 border-t border-gray-200 mt-4">
+                <h3 class="font-semibold text-sm text-gray-700 mb-2">Artigos Populares</h3>
+                <ul class="space-y-1 text-sm">
+                    <li><a href="element-fire.html" class="text-blue-600 hover:underline">Elemento Fogo</a></li>
+                    <li><a href="class-mage.html" class="text-blue-600 hover:underline">Classe Mago</a></li>
+                    <li><a href="spell-fireball.html" class="text-blue-600 hover:underline">Bola de Fogo</a></li>
+                    <li><a href="creature-dragon.html" class="text-blue-600 hover:underline">Dragão Elemental</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 overflow-auto">
+            <div class="max-w-5xl mx-auto p-8">
+                <!-- Header -->
+                <div class="mb-12 text-center">
+                    <div class="flex items-center justify-center gap-3 mb-4">
+                        <span class="text-6xl">📚</span>
+                        <h1 class="text-5xl font-bold">FoFi Wiki</h1>
+                    </div>
+                    <p class="text-xl text-gray-600 max-w-2xl mx-auto">Bem-vindo a Wikipedia do FoFi. Aqui você entenderá mais sobre a lore do jogo entre outras coisas!</p>
+                </div>
+
+                <!-- Categories Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+                    <a href="elements.html" class="p-6 rounded-lg border-2 bg-red-50 border-red-200 hover:bg-red-100 transition-all">
+                        <div class="flex items-start gap-4">
+                            <span class="text-4xl mt-1">🔥</span>
+                            <div>
+                                <h2 class="text-2xl font-bold mb-2">Elementos</h2>
+                                <p class="text-gray-700">Explore os 9 elementos primordiais de Elementia</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="classes.html" class="p-6 rounded-lg border-2 bg-blue-50 border-blue-200 hover:bg-blue-100 transition-all">
+                        <div class="flex items-start gap-4">
+                            <span class="text-4xl mt-1">⚔️</span>
+                            <div>
+                                <h2 class="text-2xl font-bold mb-2">Classes</h2>
+                                <p class="text-gray-700">Descubra as classes de heróis disponíveis</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="spells.html" class="p-6 rounded-lg border-2 bg-purple-50 border-purple-200 hover:bg-purple-100 transition-all">
+                        <div class="flex items-start gap-4">
+                            <span class="text-4xl mt-1">📜</span>
+                            <div>
+                                <h2 class="text-2xl font-bold mb-2">Magias</h2>
+                                <p class="text-gray-700">Catálogo completo de feitiços e habilidades</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="creatures.html" class="p-6 rounded-lg border-2 bg-green-50 border-green-200 hover:bg-green-100 transition-all">
+                        <div class="flex items-start gap-4">
+                            <span class="text-4xl mt-1">👥</span>
+                            <div>
+                                <h2 class="text-2xl font-bold mb-2">Criaturas</h2>
+                                <p class="text-gray-700">Bestiário com todas as criaturas de Elementia</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- About Section -->
+                <div class="bg-gray-50 rounded-lg border border-gray-200 p-8">
+                    <div class="flex items-center gap-2 mb-4">
+                        <span class="text-2xl">📖</span>
+                        <h2 class="text-2xl font-bold">Sobre Elementia</h2>
+                    </div>
+                    <div class="text-gray-700 space-y-4">
+                        <p><strong>Elementia</strong> é um mundo de fantasia onde nove elementos primordiais governam todas as forças naturais e mágicas. Desde a Era dos Titãs, quando o mundo foi moldado pela primeira vez, os elementos têm sido a fonte de todo poder.</p>
+                        <p>Neste RPG, jogadores escolhem entre diversas classes de heróis, cada uma com afinidade a diferentes elementos. Através do domínio das magias elementais e combate contra criaturas poderosas, heróis podem se tornar lendas vivas.</p>
+                        <p>Esta wiki contém informações detalhadas sobre todos os aspectos do mundo de Elementia:</p>
+                        <ul class="list-disc list-inside space-y-1 ml-4">
+                            <li><strong>9 Elementos</strong> únicos com suas próprias características e lore</li>
+                            <li><strong>8 Classes</strong> jogáveis com diferentes estilos de jogo</li>
+                            <li><strong>12+ Magias</strong> poderosas para dominar</li>
+                            <li><strong>10+ Criaturas</strong> desde bestas comuns até dragões lendários</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <a href="element-fire.html" class="p-4 bg-red-50 border border-red-200 rounded-lg hover:bg-red-100 transition-colors text-center">
+                        <div class="text-2xl mb-1">🔥</div>
+                        <div class="font-semibold text-sm">Elemento Fogo</div>
+                    </a>
+                    <a href="class-mage.html" class="p-4 bg-purple-50 border border-purple-200 rounded-lg hover:bg-purple-100 transition-colors text-center">
+                        <div class="text-2xl mb-1">🧙</div>
+                        <div class="font-semibold text-sm">Mago Elemental</div>
+                    </a>
+                    <a href="spell-fireball.html" class="p-4 bg-orange-50 border border-orange-200 rounded-lg hover:bg-orange-100 transition-colors text-center">
+                        <div class="text-2xl mb-1">💥</div>
+                        <div class="font-semibold text-sm">Bola de Fogo</div>
+                    </a>
+                    <a href="creature-dragon.html" class="p-4 bg-yellow-50 border border-yellow-200 rounded-lg hover:bg-yellow-100 transition-colors text-center">
+                        <div class="text-2xl mb-1">🐉</div>
+                        <div class="font-semibold text-sm">Dragão Primordial</div>
+                    </a>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
+<!-- elements.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos - FoFi Wiki</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white">
+    <div class="min-h-screen flex">
+        <!-- Sidebar (same as index.html) -->
+        <aside class="w-64 border-r border-gray-200 bg-gray-50">
+            <div class="p-4 border-b border-gray-200 bg-white">
+                <a href="index.html" class="flex items-center gap-2">
+                    <span class="text-2xl">📚</span>
+                    <div><p class="text-xs text-gray-500">FoFi Wiki</p></div>
+                </a>
+            </div>
+            <nav class="p-4 space-y-1">
+                <a href="index.html" class="flex items-center gap-3 px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100">
+                    <span>📚</span>Página Inicial
+                </a>
+                <a href="elements.html" class="flex items-center gap-3 px-3 py-2 rounded-md bg-blue-100 text-blue-700 font-medium">
+                    <span>🔥</span>Elementos
+                </a>
+                <a href="classes.html" class="flex items-center gap-3 px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100">
+                    <span>⚔️</span>Classes
+                </a>
+                <a href="spells.html" class="flex items-center gap-3 px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100">
+                    <span>📜</span>Magias
+                </a>
+                <a href="creatures.html" class="flex items-center gap-3 px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100">
+                    <span>👥</span>Criaturas
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 overflow-auto">
+            <div class="max-w-6xl mx-auto p-8">
+                <div class="mb-8">
+                    <h1 class="text-4xl font-bold mb-2">Elementos do FoFi</h1>
+                    <p class="text-gray-600 text-lg">Os nove elementos primordiais que governam todas as forças mágicas e naturais do mundo.</p>
+                </div>
+
+                <div class="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-8">
+                    <h2 class="text-xl font-semibold mb-3">Sobre os Elementos</h2>
+                    <p class="text-gray-700">Cada elemento possui características únicas, forças e fraquezas específicas. Elementos interagem entre si criando um sistema complexo de vantagens e desvantagens em combate.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Fogo -->
+                    <a href="element-fire.html" class="p-6 rounded-lg border-2 bg-red-50 border-red-300 hover:bg-red-100 transition-all">
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="text-4xl">🔥</span>
+                            <h2 class="text-2xl font-bold">Fogo</h2>
+                        </div>
+                        <p class="text-gray-700 mb-4">O elemento da paixão, destruição e transformação. Representa poder bruto e energia incontrolável.</p>
+                        <div class="space-y-2 text-sm">
+                            <div><span class="font-semibold">Forte contra:</span> <span class="text-gray-600">Gelo, Natureza</span></div>
+                            <div><span class="font-semibold">Fraco contra:</span> <span class="text-gray-600">Água, Terra</span></div>
+                        </div>
+                        <div class="mt-4 text-blue-600 font-medium">Ver detalhes →</div>
+                    </a>
+
+                    <!-- Água -->
+                    <a href="element-water.html" class="p-6 rounded-lg border-2 bg-blue-50 border-blue-300 hover:bg-blue-100 transition-all">
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="text-4xl">💧</span>
+                            <h2 class="text-2xl font-bold">Água</h2>
+                        </div>
+                        <p class="text-gray-700 mb-4">O elemento da adaptabilidade, cura e fluidez. Representa equilíbrio e a capacidade de superar obstáculos.</p>
+                        <div class="space-y-2 text-sm">
+                            <div><span class="font-semibold">Forte contra:</span> <span class="text-gray-600">Fogo, Terra</span></div>
+                            <div><span class="font-semibold">Fraco contra:</span> <span class="text-gray-600">Trovão, Gelo</span></div>
+                        </div>
+                        <div class="mt-4 text-blue-600 font-medium">Ver detalhes →</div>
+                    </a>
+
+                    <!-- Terra -->
+                    <a href="element-earth.html" class="p-6 rounded-lg border-2 bg-amber-50 border-amber-300 hover:bg-amber-100 transition-all">
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="text-4xl">⛰️</span>
+                            <h2 class="text-2xl font-bold">Terra</h2>
+                        </div>
+                        <p class="text-gray-700 mb-4">O elemento da resistência, estabilidade e força. Representa fundação sólida e perseverança.</p>
+                        <div class="space-y-2 text-sm">
+                            <div><span class="font-semibold">Forte contra:</span> <span class="text-gray-600">Trovão, Vento</span></div>
+                            <div><span class="font-semibold">Fraco contra:</span> <span class="text-gray-600">Fogo, Água</span></div>
+                        </div>
+                        <div class="mt-4 text-blue-600 font-medium">Ver detalhes →</div>
+                    </a>
+
+                    <!-- Vento -->
+                    <a href="element-wind.html" class="p-6 rounded-lg border-2 bg-cyan-50 border-cyan-300 hover:bg-cyan-100 transition-all">
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="text-4xl">💨</span>
+                            <h2 class="text-2xl font-bold">Vento</h2>
+                        </div>
+                        <p class="text-gray-700 mb-4">O elemento da velocidade, liberdade e imprevisibilidade. Representa movimento e mudança constante.</p>
+                        <div class="space-y-2 text-sm">
+                            <div><span class="font-semibold">Forte contra:</span> <span class="text-gray-600">Terra, Veneno</span></div>
+                            <div><span class="font-semibold">Fraco contra:</span> <span class="text-gray-600">Fogo, Trovão</span></div>
+                        </div>
+                        <div class="mt-4 text-blue-600 font-medium">Ver detalhes →</div>
+                    </a>
+
+                    <!-- Trovão -->
+                    <a href="element-lightning.html" class="p-6 rounded-lg border-2 bg-yellow-50 border-yellow-300 hover:bg-yellow-100 transition-all">
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="text-4xl">⚡</span>
+                            <h2 class="text-2xl font-bold">Trovão</h2>
+                        </div>
+                        <p class="text-gray-700 mb-4">O elemento da velocidade letal e poder concentrado. Representa justiça rápida e energia pura.</p>
+                        <div class="space-y-2 text-sm">
+                            <div><span class="font-semibold">Forte contra:</span> <span class="text-gray-600">Água, Vento</span></div>
+                            <div><span class="font-semibold">Fraco contra:</span> <span class="text-gray-600">Terra, Luz</span></div>
+                        </div>
+                        <div class="mt-4 text-blue-600 font-medium">Ver detalhes →</div>
+                    </a>
+
+                    <!-- Gelo -->
+                    <a href="element-ice.html" class="p-6 rounded-lg border-2 bg-sky-50 border-sky-300 hover:bg-sky-100 transition-all">
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="text-4xl">❄️</span>
+                            <h2 class="text-2xl font-bold">Gelo</h2>
+                        </div>
+                        <p class="text-gray-700 mb-4">O elemento do controle absoluto e preservação. Representa paciência, estratégia e controle do tempo.</p>
+                        <div class="space-y-2 text-sm">
+                            <div><span class="font-semibold">Forte contra:</span> <span class="text-gray-600">Água, Vento</span></div>
+                            <div><span class="font-semibold">Fraco contra:</span> <span class="text-gray-600">Fogo, Trovão</span></div>
+                        </div>
+                        <div class="mt-4 text-blue-600 font-medium">Ver detalhes →</div>
+                    </a>
+
+                    <!-- Natureza -->
+                    <a href="element-nature.html" class="p-6 rounded-lg border-2 bg-green-50 border-green-300 hover:bg-green-100 transition-all">
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="text-4xl">🌿</span>
+                            <h2 class="text-2xl font-bold">Natureza</h2>
+                        </div>
+                        <p class="text-gray-700 mb-4">O elemento do crescimento, vida e harmonia. Representa o ciclo eterno da vida e morte.</p>
+                        <div class="space-y-2 text-sm">
+                            <div><span class="font-semibold">Forte contra:</span> <span class="text-gray-600">Terra, Água</span></div>
+                            <div><span class="font-semibold">Fraco contra:</span> <span class="text-gray-600">Fogo, Veneno</span></div>
+                        </div>
+                        <div class="mt-4 text-blue-600 font-medium">Ver detalhes →</div>
+                    </a>
+
+                    <!-- Luz -->
+                    <a href="element-light.html" class="p-6 rounded-lg border-2 bg-amber-50 border-amber-300 hover:bg-amber-100 transition-all">
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="text-4xl">✨</span>
+                            <h2 class="text-2xl font-bold">Luz</h2>
+                        </div>
+                        <p class="text-gray-700 mb-4">O elemento da pureza, cura e revelação. Representa esperança, verdade e ordem divina.</p>
+                        <div class="space-y-2 text-sm">
+                            <div><span class="font-semibold">Forte contra:</span> <span class="text-gray-600">Escuridão, Morto-Vivo</span></div>
+                            <div><span class="font-semibold">Fraco contra:</span> <span class="text-gray-600">Escuridão</span></div>
+                        </div>
+                        <div class="mt-4 text-blue-600 font-medium">Ver detalhes →</div>
+                    </a>
+
+                    <!-- Escuridão -->
+                    <a href="element-darkness.html" class="p-6 rounded-lg border-2 bg-purple-50 border-purple-300 hover:bg-purple-100 transition-all">
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="text-4xl">🌑</span>
+                            <h2 class="text-2xl font-bold">Escuridão</h2>
+                        </div>
+                        <p class="text-gray-700 mb-4">O elemento do mistério, medo e poder oculto. Representa o desconhecido e as sombras.</p>
+                        <div class="space-y-2 text-sm">
+                            <div><span class="font-semibold">Forte contra:</span> <span class="text-gray-600">Luz, Psíquico</span></div>
+                            <div><span class="font-semibold">Fraco contra:</span> <span class="text-gray-600">Luz, Fogo</span></div>
+                        </div>
+                        <div class="mt-4 text-blue-600 font-medium">Ver detalhes →</div>
+                    </a>
+                </div>
+
+                <!-- System Guide -->
+                <div class="mt-12 bg-gray-50 rounded-lg border border-gray-200 p-6">
+                    <h2 class="text-2xl font-bold mb-4">Sistema de Vantagens Elementais</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm">
+                        <div>
+                            <h3 class="font-semibold mb-2 text-lg">Ciclo Clássico</h3>
+                            <ul class="space-y-1 text-gray-700">
+                                <li>• Fogo → Gelo/Natureza</li>
+                                <li>• Água → Fogo/Terra</li>
+                                <li>• Terra → Trovão/Vento</li>
+                                <li>• Trovão → Água/Vento</li>
+                                <li>• Gelo → Água/Vento</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold mb-2 text-lg">Ciclo Especial</h3>
+                            <ul class="space-y-1 text-gray-700">
+                                <li>• Luz ↔ Escuridão (opostos)</li>
+                                <li>• Natureza → Terra/Água</li>
+                                <li>• Vento → Terra/Veneno</li>
+                                <li>• Escuridão → Luz/Psíquico</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
+<!-- element-fire.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fogo - Elementos - FoFi Wiki</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white">
+    <div class="min-h-screen flex">
+        <!-- Sidebar (mesma estrutura) -->
+        <aside class="w-64 border-r border-gray-200 bg-gray-50">
+            <div class="p-4 border-b border-gray-200 bg-white">
+                <a href="index.html" class="flex items-center gap-2">
+                    <span class="text-2xl">📚</span>
+                    <div><p class="text-xs text-gray-500">FoFi Wiki</p></div>
+                </a>
+            </div>
+            <nav class="p-4 space-y-1">
+                <a href="index.html" class="flex items-center gap-3 px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100">
+                    <span>📚</span>Página Inicial
+                </a>
+                <a href="elements.html" class="flex items-center gap-3 px-3 py-2 rounded-md bg-blue-100 text-blue-700 font-medium">
+                    <span>🔥</span>Elementos
+                </a>
+                <a href="classes.html" class="flex items-center gap-3 px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100">
+                    <span>⚔️</span>Classes
+                </a>
+                <a href="spells.html" class="flex items-center gap-3 px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100">
+                    <span>📜</span>Magias
+                </a>
+                <a href="creatures.html" class="flex items-center gap-3 px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100">
+                    <span>👥</span>Criaturas
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 overflow-auto">
+            <div class="max-w-4xl mx-auto p-8">
+                <a href="elements.html" class="inline-flex items-center gap-2 text-blue-600 hover:underline mb-6">
+                    ← Voltar para Elementos
+                </a>
+
+                <!-- Header -->
+                <div class="bg-red-50 border-2 border-red-300 rounded-lg p-8 mb-8">
+                    <div class="flex items-center gap-4 mb-4">
+                        <span class="text-6xl">🔥</span>
+                        <div>
+                            <h1 class="text-4xl font-bold">Fogo</h1>
+                            <p class="text-xl text-gray-600 mt-1">O elemento da paixão, destruição e transformação. Representa poder bruto e energia incontrolável.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stats Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                    <div class="bg-green-50 border border-green-200 rounded-lg p-6">
+                        <h2 class="text-xl font-bold text-green-700 mb-3">Forte Contra</h2>
+                        <ul class="space-y-2">
+                            <li class="flex items-center gap-2">
+                                <span class="text-green-600">✓</span>
+                                <span class="font-medium">Gelo</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-green-600">✓</span>
+                                <span class="font-medium">Natureza</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-red-50 border border-red-200 rounded-lg p-6">
+                        <h2 class="text-xl font-bold text-red-700 mb-3">Fraco Contra</h2>
+                        <ul class="space-y-2">
+                            <li class="flex items-center gap-2">
+                                <span class="text-red-600">✗</span>
+                                <span class="font-medium">Água</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-red-600">✗</span>
+                                <span class="font-medium">Terra</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Characteristics -->
+                <div class="bg-white border border-gray-200 rounded-lg p-6 mb-8">
+                    <h2 class="text-2xl font-bold mb-4">Características</h2>
+                    <ul class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                        <li class="flex items-start gap-2">
+                            <span class="text-red-700 mt-1">•</span>
+                            <span class="text-gray-700">Alto dano em área</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-red-700 mt-1">•</span>
+                            <span class="text-gray-700">Causa queimadura</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-red-700 mt-1">•</span>
+                            <span class="text-gray-700">Aumenta com raiva e emoção</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-red-700 mt-1">•</span>
+                            <span class="text-gray-700">Difícil de controlar</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Associated Classes -->
+                <div class="bg-white border border-gray-200 rounded-lg p-6 mb-8">
+                    <h2 class="text-2xl font-bold mb-4">Classes Associadas</h2>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-4 py-2 bg-red-50 border-red-300 border rounded-full font-medium">Mago de Fogo</span>
+                        <span class="px-4 py-2 bg-red-50 border-red-300 border rounded-full font-medium">Piromante</span>
+                        <span class="px-4 py-2 bg-red-50 border-red-300 border rounded-full font-medium">Guerreiro Infernal</span>
+                    </div>
+                </div>
+
+                <!-- Lore -->
+                <div class="bg-gray-50 border border-gray-200 rounded-lg p-6">
+                    <h2 class="text-2xl font-bold mb-4">História e Tradição</h2>
+                    <p class="text-gray-700 leading-relaxed">Desde o início dos tempos, o Fogo é considerado o elemento mais volátil e poderoso. Nascido das profundezas dos vulcões primordiais e do coração das estrelas, o Fogo representa a transformação absoluta. Antigos textos falam de uma era onde os Lordes do Fogo governavam sobre vastos impérios, até que a Grande Guerra Elemental trouxe equilíbrio ao mundo.</p>
+                </div>
+
+                <!-- Navigation -->
+                <div class="mt-8 flex gap-4">
+                    <a href="classes.html" class="flex-1 p-4 bg-blue-50 border border-blue-200 rounded-lg hover:bg-blue-100 transition-colors text-center font-semibold">
+                        Ver Classes →
+                    </a>
+                    <a href="spells.html" class="flex-1 p-4 bg-purple-50 border border-purple-200 rounded-lg hover:bg-purple-100 transition-colors text-center font-semibold">
+                        Ver Magias →
+                    </a>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
+
+<!-- classes.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes - FoFi Wiki</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white">
+    <div class="min-h-screen flex">
+        <!-- Sidebar -->
+        <aside class="w-64 border-r border-gray-200 bg-gray-50">
+            <div class="p-4 border-b border-gray-200 bg-white">
+                <a href="index.html" class="flex items-center gap-2">
+                    <span class="text-2xl">📚</span>
+                    <div><p class="text-xs text-gray-500">FoFi Wiki</p></div>
+                </a>
+            </div>
+            <nav class="p-4 space-y-1">
+                <a href="index.html" class="flex items-center gap-3 px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100">
+                    <span>📚</span>Página Inicial
+                </a>
+                <a href="elements.html" class="flex items-center gap-3 px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100">
+                    <span>🔥</span>Elementos
+                </a>
+                <a href="classes.html" class="flex items-center gap-3 px-3 py-2 rounded-md bg-blue-100 text-blue-700 font-medium">
+                    <span>⚔️</span>Classes
+                </a>
+                <a href="spells.html" class="flex items-center gap-3 px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100">
+                    <span>📜</span>Magias
+                </a>
+                <a href="creatures.html" class="flex items-center gap-3 px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100">
+                    <span>👥</span>Criaturas
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 overflow-auto">
+            <div class="max-w-6xl mx-auto p-8">
+                <div class="mb-8">
+                    <h1 class="text-4xl font-bold mb-2">Classes de Elementia</h1>
+                    <p class="text-gray-600 text-lg">Escolha sua classe e domine os elementos. Cada classe oferece um estilo de jogo único.</p>
+                </div>
+
+                <div class="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-8">
+                    <h2 class="text-xl font-semibold mb-3">Sistema de Classes</h2>
+                    <p class="text-gray-700">As classes em Elementia são definidas por sua afinidade elemental e papel em combate. Escolha uma classe que combine com seu estilo de jogo preferido: DPS (dano), Tank (resistência), Healer (cura) ou Suporte (buffs e controle).</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    <!-- Mago Elemental -->
+                    <a href="class-mage.html" class="bg-white border-2 border-gray-200 rounded-lg p-6 hover:border-blue-400 hover:shadow-lg transition-all">
+                        <div class="flex items-start justify-between mb-4">
+                            <div>
+                                <h2 class="text-2xl font-bold mb-1">Mago Elemental</h2>
+                                <p class="text-gray-600">DPS Mágico</p>
+                            </div>
+                            <span class="px-3 py-1 rounded-full text-sm font-medium bg-yellow-100 text-yellow-700">Médio</span>
+                        </div>
+                        <p class="text-gray-700 mb-4">Mestre da manipulação de elementos, capaz de conjurar feitiços devastadores de múltiplos elementos.</p>
+                        <div class="space-y-3 mb-4">
+                            <div class="flex items-center gap-2 text-sm">
+                                <span class="font-semibold">Elemento Primário:</span>
+                                <span class="px-2 py-1 bg-blue-100 text-blue-700 rounded">Fogo</span>
+                                <span class="text-gray-400">+</span>
+                                <span class="px-2 py-1 bg-purple-100 text-purple-700 rounded">Trovão</span>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-3 gap-2 text-xs">
+                            <div class="bg-red-50 p-2 rounded text-center">
+                                <div class="font-semibold text-red-700">HP</div>
+                                <div class="text-gray-700">60</div>
+                            </div>
+                            <div class="bg-blue-50 p-2 rounded text-center">
+                                <div class="font-semibold text-blue-700">Ataque</div>
+                                <div class="text-gray-700">30</div>
+                            </div>
+                            <div class="bg-purple-50 p-2 rounded text-center">
+                                <div class="font-semibold text-purple-700">Magia</div>
+                                <div class="text-gray-700">95</div>
+                            </div>
+                        </div>
+                        <div class="mt-4 text-blue-600 font-medium">Ver detalhes completos →</div>
+                    </a>
+
+                    <!-- Guerreiro Elemental -->
+                    <a href="class-warrior.html" class="bg-white border-2 border-gray-200 rounded-lg p-6 hover:border-blue-400 hover:shadow-lg transition-all">
+                        <div class="flex items-start justify-between mb-4">
+                            <div>
+                                <h2 class="text-2xl font-bold mb-1">Guerreiro Elemental</h2>
+                                <p class="text-gray-600">Tank/DPS Físico</p>
+                            </div>
+                            <span class="px-3 py-1 rounded-full text-sm font-medium bg-green-100 text-green-700">Fácil</span>
+                        </div>
+                        <p class="text-gray-700 mb-4">Combatente corpo a corpo que canaliza poder elemental através de suas armas.</p>
+                        <div class="space-y-3 mb-4">
+                            <div class="flex items-center gap-2 text-sm">
+                                <span class="font-semibold">Elemento Primário:</span>
+                                <span class="px-2 py-1 bg-blue-100 text-blue-700 rounded">Terra</span>
+                                <span class="text-gray-400">+</span>
+                                <span class="px-2 py-1 bg-purple-100 text-purple-700 rounded">Fogo</span>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-3 gap-2 text-xs">
+                            <div class="bg-red-50 p-2 rounded text-center">
+                                <div class="font-semibold text-red-700">HP</div>
+                                <div class="text-gray-700">95</div>
+                            </div>
+                            <div class="bg-blue-50 p-2 rounded text-center">
+                                <div class="font-semibold text-blue-700">Ataque</div>
+                                <div class="text-gray-700">85</div>
+                            </div>
+                            <div class="bg-purple-50 p-2 rounded text-center">
+                                <div class="font-semibold text-purple-700">Magia</div>
+                                <div class="text-gray-700">45</div>
+                            </div>
+                        </div>
+                        <div class="mt-4 text-blue-600 font-medium">Ver detalhes completos →</div>
+                    </a>
+
+                    <!-- Guardião da Natureza -->
+                    <a href="class-ranger.html" class="bg-white border-2 border-gray-200 rounded-lg p-6 hover:border-blue-400 hover:shadow-lg transition-all">
+                        <div class="flex items-start justify-between mb-4">
+                            <div>
+                                <h2 class="text-2xl font-bold mb-1">Guardião da Natureza</h2>
+                                <p class="text-gray-600">DPS Físico/Suporte</p>
+                            </div>
+                            <span class="px-3 py-1 rounded-full text-sm font-medium bg-yellow-100 text-yellow-700">Médio</span>
+                        </div>
+                        <p class="text-gray-700 mb-4">Arqueiro ágil que comanda as forças da natureza e possui afinidade com animais.</p>
+                        <div class="space-y-3 mb-4">
+                            <div class="flex items-center gap-2 text-sm">
+                                <span class="font-semibold">Elemento Primário:</span>
+                                <span class="px-2 py-1 bg-blue-100 text-blue-700 rounded">Natureza</span>
+                                <span class="text-gray-400">+</span>
+                                <span class="px-2 py-1 bg-purple-100 text-purple-700 rounded">Vento</span>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-3 gap-2 text-xs">
+                            <div class="bg-red-50 p-2 rounded text-center">
+                                <div class="font-semibold text-red-700">HP</div>
+                                <div class="text-gray-700">70</div>
+                            </div>
+                            <div class="bg-blue-50 p-2 rounded text-center">
+                                <div class="font-semibold text-blue-700">Ataque</div>
+                                <div class="text-gray-700">75</div>
+                            </div>
+                            <div class="bg-purple-50 p-2 rounded text-center">
+                                <div class="font-semibold text-purple-700">Magia</div>
+                                <div class="text-gray-700">60</div>
+                            </div>
+                        </div>
+                        <div class="mt-4 text-blue-600 font-medium">Ver detalhes completos →</div>
+                    </a>
+
+                    <!-- Paladino da Luz -->
+                    <a href="class-paladin.html" class="bg-white border-2 border-gray-200 rounded-lg p-6 hover:border-blue-400 hover:shadow-lg transition-all">
+                        <div class="flex items-start justify-between mb-4">
+                            <div>
+                                <h2 class="text-2xl font-bold mb-1">Paladino da Luz</h2>
+                                <p class="text-gray-600">Tank/Healer</p>
+                            </div>
+                            <span class="px-3 py-1 rounded-full text-sm font-medium bg-yellow-100 text-yellow-700">Médio</span>
+                        </div>
+                        <p class="text-gray-700 mb-4">Guerreiro sagrado que une poder marcial com magia da luz para proteger aliados.</p>
+                        <div class="space-y-3 mb-4">
+                            <div class="flex items-center gap-2 text-sm">
+                                <span class="font-semibold">Elemento Primário:</span>
+                                <span class="px-2 py-1 bg-blue-100 text-blue-700 rounded">Luz</span>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-3 gap-2 text-xs">
+                            <div class="bg-red-50 p-2 rounded text-center">
+                                <div class="font-semibold text-red-700">HP</div>
+                                <div class="text-gray-700">90</div>
+                            </div>
+                            <div class="bg-blue-50 p-2 rounded text-center">
+                                <div class="font-semibold text-blue-700">Ataque</div>
+                                <div class="text-gray-700">70</div>
+                            </div>
+                            <div class="bg-purple-50 p-2 rounded text-center">
+                                <div class="font-semibold text-purple-700">Magia</div>
+                                <div class="text-gray-700">70</div>
+                            </div>
+                        </div>
+                        <div class="mt-4 text-blue-600 font-medium">Ver detalhes completos →</div>
+                    </a>
+
+                    <!-- Lâmina Sombria -->
+                    <a href="class-assassin.html" class="bg-white border-2 border-gray-200 rounded-lg p-6 hover:border-blue-400 hover:shadow-lg transition-all">
+                        <div class="flex items-start justify-between mb-4">
+                            <div>
+                                <h2 class="text-2xl font-bold mb-1">Lâmina Sombria</h2>
+                                <p class="text-gray-600">DPS Burst</p>
+                            </div>
+                            <span class="px-3 py-1 rounded-full text-sm font-medium bg-red-100 text-red-700">Avançado</span>
+                        </div>
+                        <p class="text-gray-700 mb-4">Assassino furtivo que utiliza sombras e escuridão para eliminar alvos silenciosamente.</p>
+                        <div class="space-y-3 mb-4">
+                            <div class="flex items-center gap-2 text-sm">
+                                <span class="font-semibold">Elemento Primário:</span>
+                                <span class="px-2 py-1 bg-blue-100 text-blue-700 rounded">Escuridão</span>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-3 gap-2 text-xs">
+                            <div class="bg-red-50 p-2 rounded text-center">
+                                <div class="font-semibold text-red-700">HP</div>
+                                <div class="text-gray-700">65</div>
+                            </div>
+                            <div class="bg-blue-50 p-2 rounded text-center">
+                                <div class="font-semibold text-blue-700">Ataque</div>
+                                <div class="text-gray-700">90</div>
+                            </div>
+                            <div class="bg-purple-50 p-2 rounded text-center">
+                                <div class="font-semibold text-purple-700">Magia</div>
+                                <div class="text-gray-700">55</div>
+                            </div>
+                        </div>
+                        <div class="mt-4 text-blue-600 font-medium">Ver detalhes completos →</div>
+                    </a>
+
+                    <!-- Criomante -->
+                    <a href="class-cryomancer.html" class="bg-white border-2 border-gray-200 rounded-lg p-6 hover:border-blue-400 hover:shadow-lg transition-all">
+                        <div class="flex items-start justify-between mb-4">
+                            <div>
+                                <h2 class="text-2xl font-bold mb-1">Criomante</h2>
+                                <p class="text-gray-600">DPS Mágico/Controle</p>
+                            </div>
+                            <span class="px-3 py-1 rounded-full text-sm font-medium bg-orange-100 text-orange-700">Difícil</span>
+                        </div>
+                        <p class="text-gray-700 mb-4">Feiticeiro especializado em magia de gelo, capaz de congelar inimigos e controlar multidões.</p>
+                        <div class="space-y-3 mb-4">
+                            <div class="flex items-center gap-2 text-sm">
+                                <span class="font-semibold">Elemento Primário:</span>
+                                <span class="px-2 py-1 bg-blue-100 text-blue-700 rounded">Gelo</span>
+                                <span class="text-gray-400">+</span>
+                                <span class="px-2 py-1 bg-purple-100 text-purple-700 rounded">Água</span>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-3 gap-2 text-xs">
+                            <div class="bg-red-50 p-2 rounded text-center">
+                                <div class="font-semibold text-red-700">HP</div>
+                                <div class="text-gray-700">55</div>
+                            </div>
+                            <div class="bg-blue-50 p-2 rounded text-center">
+                                <div class="font-semibold text-blue-700">Ataque</div>
+                                <div class="text-gray-700">35</div>
+                            </div>
+                            <div class="bg-purple-50 p-2 rounded text-center">
+                                <div class="font-semibold text-purple-700">Magia</div>
+                                <div class="text-gray-700">90</div>
+                            </div>
+                        </div>
+                        <div class="mt-4 text-blue-600 font-medium">Ver detalhes completos →</div>
+                    </a>
+
+                    <!-- Invocador de Tempestades -->
+                    <a href="class-stormcaller.html" class="bg-white border-2 border-gray-200 rounded-lg p-6 hover:border-blue-400 hover:shadow-lg transition-all">
+                        <div class="flex items-start justify-between mb-4">
+                            <div>
+                                <h2 class="text-2xl font-bold mb-1">Invocador de Tempestades</h2>
+                                <p class="text-gray-600">DPS Mágico</p>
+                            </div>
+                            <span class="px-3 py-1 rounded-full text-sm font-medium bg-orange-100 text-orange-700">Difícil</span>
+                        </div>
+                        <p class="text-gray-700 mb-4">Xamã que comanda o poder das tempestades, invocando raios e trovões devastadores.</p>
+                        <div class="space-y-3 mb-4">
+                            <div class="flex items-center gap-2 text-sm">
+                                <span class="font-semibold">Elemento Primário:</span>
+                                <span class="px-2 py-1 bg-blue-100 text-blue-700 rounded">Trovão</span>
+                                <span class="text-gray-400">+</span>
+                                <span class="px-2 py-1 bg-purple-100 text-purple-700 rounded">Vento</span>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-3 gap-2 text-xs">
+                            <div class="bg-red-50 p-2 rounded text-center">
+                                <div class="font-semibold text-red-700">HP</div>
+                                <div class="text-gray-700">60</div>
+                            </div>
+                            <div class="bg-blue-50 p-2 rounded text-center">
+                                <div class="font-semibold text-blue-700">Ataque</div>
+                                <div class="text-gray-700">40</div>
+                            </div>
+                            <div class="bg-purple-50 p-2 rounded text-center">
+                                <div class="font-semibold text-purple-700">Magia</div>
+                                <div class="text-gray-700">88</div>
+                            </div>
+                        </div>
+                        <div class="mt-4 text-blue-600 font-medium">Ver detalhes completos →</div>
+                    </a>
+
+                    <!-- Necromante -->
+                    <a href="class-necromancer.html" class="bg-white border-2 border-gray-200 rounded-lg p-6 hover:border-blue-400 hover:shadow-lg transition-all">
+                        <div class="flex items-start justify-between mb-4">
+                            <div>
+                                <h2 class="text-2xl font-bold mb-1">Necromante</h2>
+                                <p class="text-gray-600">DPS Mágico/Invocador</p>
+                            </div>
+                            <span class="px-3 py-1 rounded-full text-sm font-medium bg-red-100 text-red-700">Avançado</span>
+                        </div>
+                        <p class="text-gray-700 mb-4">Mago das trevas que manipula a morte e comanda hordas de mortos-vivos.</p>
+                        <div class="space-y-3 mb-4">
+                            <div class="flex items-center gap-2 text-sm">
+                                <span class="font-semibold">Elemento Primário:</span>
+                                <span class="px-2 py-1 bg-blue-100 text-blue-700 rounded">Escuridão</span>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-3 gap-2 text-xs">
+                            <div class="bg-red-50 p-2 rounded text-center">
+                                <div class="font-semibold text-red-700">HP</div>
+                                <div class="text-gray-700">50</div>
+                            </div>
+                            <div class="bg-blue-50 p-2 rounded text-center">
+                                <div class="font-semibold text-blue-700">Ataque</div>
+                                <div class="text-gray-700">25</div>
+                            </div>
+                            <div class="bg-purple-50 p-2 rounded text-center">
+                                <div class="font-semibold text-purple-700">Magia</div>
+                                <div class="text-gray-700">92</div>
+                            </div>
+                        </div>
+                        <div class="mt-4 text-blue-600 font-medium">Ver detalhes completos →</div>
+                    </a>
+                </div>
+
+                <!-- Tips Section -->
+                <div class="mt-12 bg-gray-50 rounded-lg border border-gray-200 p-6">
+                    <h2 class="text-2xl font-bold mb-4">Dicas para Escolher sua Classe</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-gray-700">
+                        <div>
+                            <h3 class="font-semibold mb-2">Para Iniciantes:</h3>
+                            <p>Classes de dificuldade "Fácil" como Guerreiro Elemental são ideais para aprender mecânicas básicas.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold mb-2">Para Veteranos:</h3>
+                            <p>Classes "Avançadas" como Lâmina Sombria e Necromante exigem conhecimento profundo do jogo.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold mb-2">Estilo Solo:</h3>
+                            <p>Classes com cura ou alta defesa como Paladino são melhores para jogar sozinho.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold mb-2">Jogo em Grupo:</h3>
+                            <p>Considere o papel do grupo - todo time precisa de DPS, Tank e Healer balanceados.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
+<!-- class-mage.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mago Elemental - Classes - FoFi Wiki</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white">
+    <div class="min-h-screen flex">
+        <!-- Sidebar -->
+        <aside class="w-64 border-r border-gray-200 bg-gray-50">
+            <div class="p-4 border-b border-gray-200 bg-white">
+                <a href="index.html" class="flex items-center gap-2">
+                    <span class="text-2xl">📚</span>
+                    <div><p class="text-xs text-gray-500">FoFi Wiki</p></div>
+                </a>
+            </div>
+            <nav class="p-4 space-y-1">
+                <a href="index.html" class="flex items-center gap-3 px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100">
+                    <span>📚</span>Página Inicial
+                </a>
+                <a href="elements.html" class="flex items-center gap-3 px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100">
+                    <span>🔥</span>Elementos
+                </a>
+                <a href="classes.html" class="flex items-center gap-3 px-3 py-2 rounded-md bg-blue-100 text-blue-700 font-medium">
+                    <span>⚔️</span>Classes
+                </a>
+                <a href="spells.html" class="flex items-center gap-3 px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100">
+                    <span>📜</span>Magias
+                </a>
+                <a href="creatures.html" class="flex items-center gap-3 px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100">
+                    <span>👥</span>Criaturas
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 overflow-auto">
+            <div class="max-w-4xl mx-auto p-8">
+                <a href="classes.html" class="inline-flex items-center gap-2 text-blue-600 hover:underline mb-6">
+                    ← Voltar para Classes
+                </a>
+
+                <!-- Header -->
+                <div class="bg-gradient-to-r from-blue-50 to-purple-50 border-2 border-blue-200 rounded-lg p-8 mb-8">
+                    <div class="flex items-start justify-between mb-4">
+                        <div>
+                            <h1 class="text-4xl font-bold mb-2">Mago Elemental</h1>
+                            <p class="text-xl text-gray-600 mb-3">Mestre da manipulação de elementos, capaz de conjurar feitiços devastadores de múltiplos elementos.</p>
+                            <div class="flex items-center gap-3">
+                                <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full font-medium text-sm">DPS Mágico</span>
+                                <span class="px-3 py-1 rounded-full font-medium text-sm border bg-yellow-100 text-yellow-700 border-yellow-300">Médio</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-2 text-sm">
+                        <span class="font-semibold">Elementos:</span>
+                        <span class="px-3 py-1 bg-blue-200 text-blue-800 rounded font-medium">Fogo</span>
+                        <span class="text-gray-400">+</span>
+                        <span class="px-3 py-1 bg-purple-200 text-purple-800 rounded font-medium">Trovão</span>
+                    </div>
+                </div>
+
+                <!-- Stats -->
+                <div class="bg-white border border-gray-200 rounded-lg p-6 mb-8">
+                    <h2 class="text-2xl font-bold mb-4">Atributos</h2>
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                        <div class="space-y-2">
+                            <div class="flex items-center justify-between">
+                                <span class="font-semibold text-sm">Vida</span>
+                                <span class="font-bold text-lg">60</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-blue-600 h-2 rounded-full" style="width: 60%"></div>
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="flex items-center justify-between">
+                                <span class="font-semibold text-sm">Mana</span>
+                                <span class="font-bold text-lg">100</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-blue-600 h-2 rounded-full" style="width: 100%"></div>
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="flex items-center justify-between">
+                                <span class="font-semibold text-sm">Ataque</span>
+                                <span class="font-bold text-lg">30</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-blue-600 h-2 rounded-full" style="width: 30%"></div>
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="flex items-center justify-between">
+                                <span class="font-semibold text-sm">Defesa</span>
+                                <span class="font-bold text-lg">40</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-blue-600 h-2 rounded-full" style="width: 40%"></div>
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="flex items-center justify-between">
+                                <span class="font-semibold text-sm">Velocidade</span>
+                                <span class="font-bold text-lg">50</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-blue-600 h-2 rounded-full" style="width: 50%"></div>
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="flex items-center justify-between">
+                                <span class="font-semibold text-sm">Magia</span>
+                                <span class="font-bold text-lg">95</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-blue-600 h-2 rounded-full" style="width: 95%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Abilities -->
+                <div class="bg-white border border-gray-200 rounded-lg p-6 mb-8">
+                    <h2 class="text-2xl font-bold mb-4">Habilidades</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                        <div class="flex items-center gap-3 p-3 bg-purple-50 border border-purple-200 rounded-lg">
+                            <div class="flex-shrink-0 w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold text-sm">1</div>
+                            <span class="font-medium">Bola de Fogo</span>
+                        </div>
+                        <div class="flex items-center gap-3 p-3 bg-purple-50 border border-purple-200 rounded-lg">
+                            <div class="flex-shrink-0 w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold text-sm">2</div>
+                            <span class="font-medium">Relâmpago Encadeado</span>
+                        </div>
+                        <div class="flex items-center gap-3 p-3 bg-purple-50 border border-purple-200 rounded-lg">
+                            <div class="flex-shrink-0 w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold text-sm">3</div>
+                            <span class="font-medium">Explosão Arcana</span>
+                        </div>
+                        <div class="flex items-center gap-3 p-3 bg-purple-50 border border-purple-200 rounded-lg">
+                            <div class="flex-shrink-0 w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold text-sm">4</div>
+                            <span class="font-medium">Escudo Elemental</span>
+                        </div>
+                        <div class="flex items-center gap-3 p-3 bg-purple-50 border border-purple-200 rounded-lg">
+                            <div class="flex-shrink-0 w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold text-sm">5</div>
+                            <span class="font-medium">Meteoro</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Playstyle -->
+                <div class="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-8">
+                    <h2 class="text-2xl font-bold mb-3">Estilo de Jogo</h2>
+                    <p class="text-gray-700 leading-relaxed">Ataque à distância com alto dano em área. Requer posicionamento cuidadoso e gestão de mana.</p>
+                </div>
+
+                <!-- Lore -->
+                <div class="bg-gray-50 border border-gray-200 rounded-lg p-6 mb-8">
+                    <h2 class="text-2xl font-bold mb-4">História e Origem</h2>
+                    <p class="text-gray-700 leading-relaxed">Os Magos Elementais são eruditos que dedicaram suas vidas ao estudo das forças primordiais. Na Academia Arcana de Crystallus, eles aprendem a tecer os elementos em padrões complexos de poder destrutivo.</p>
+                </div>
+
+                <!-- Recommendations -->
+                <div class="bg-amber-50 border border-amber-200 rounded-lg p-6 mb-8">
+                    <h2 class="text-2xl font-bold mb-4">Recomendações</h2>
+                    <div class="space-y-3 text-sm">
+                        <div>
+                            <span class="font-semibold">Melhor para:</span>
+                            <span class="text-gray-700">Jogadores intermediários, aqueles que entendem combos básicos</span>
+                        </div>
+                        <div>
+                            <span class="font-semibold">Sinergia em grupo:</span>
+                            <span class="text-gray-700">Foco em causar o máximo de dano possível</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation -->
+                <div class="flex gap-4">
+                    <a href="elements.html" class="flex-1 p-4 bg-red-50 border border-red-200 rounded-lg hover:bg-red-100 transition-colors text-center font-semibold">
+                        Ver Elementos →
+                    </a>
+                    <a href="spells.html" class="flex-1 p-4 bg-purple-50 border border-purple-200 rounded-lg hover:bg-purple-100 transition-colors text-center font-semibold">
+                        Ver Magias →
+                    </a>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
+
+<!-- spells.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magias - FoFi Wiki</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white">
+    <div class="min-h-screen flex">
+        <!-- Sidebar -->
+        <aside class="w-64 border-r border-gray-200 bg-gray-50">
+            <div class="p-4 border-b border-gray-200 bg-white">
+                <a href="index.html" class="flex items-center gap-2">
+                    <span class="text-2xl">📚</span>
+                    <div><p class="text-xs text-gray-500">FoFi Wiki</p></div>
+                </a>
+            </div>
+            <nav class="p-4 space-y-1">
+                <a href="index.html" class="flex items-center gap-3 px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100">
+                    <span>📚</span>Página Inicial
+                </a>
+                <a href="elements.html" class="flex items-center gap-3 px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100">
+                    <span>🔥</span>Elementos
+                </a>
+                <a href="classes.html" class="flex items-center gap-3 px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100">
+                    <span>⚔️</span>Classes
+                </a>
+                <a href="spells.html" class="flex items-center gap-3 px-3 py-2 rounded-md bg-blue-100 text-blue-700 font-medium">
+                    <span>📜</span>Magias
+                </a>
+                <a href="creatures.html" class="flex items-center gap-3 px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100">
+                    <span>👥</span>Criaturas
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 overflow-auto">
+            <div class="max-w-6xl mx-auto p-8">
+                <div class="mb-8">
+                    <h1 class="text-4xl font-bold mb-2">Magias de Elementia</h1>
+                    <p class="text-gray-600 text-lg">Catálogo completo de feitiços e habilidades disponíveis para as classes.</p>
+                </div>
+
+                <!-- Filters -->
+                <div class="bg-white border border-gray-200 rounded-lg p-6 mb-8">
+                    <h2 class="font-semibold mb-4">Filtros</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Elemento</label>
+                            <select class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                <option>Todos</option>
+                                <option>Fogo</option>
+                                <option>Água</option>
+                                <option>Terra</option>
+                                <option>Vento</option>
+                                <option>Trovão</option>
+                                <option>Gelo</option>
+                                <option>Natureza</option>
+                                <option>Luz</option>
+                                <option>Escuridão</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Tipo</label>
+                            <select class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                <option>Todos</option>
+                                <option>Ataque</option>
+                                <option>Cura</option>
+                                <option>Buff</option>
+                                <option>Debuff</option>
+                                <option>Invocação</option>
+                                <option>Controle</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-4 text-sm text-gray-600">Exibindo 12 de 12 magias</div>
+
+                <!-- Spells Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Bola de Fogo -->
+                    <a href="spell-fireball.html" class="bg-white border-2 border-gray-200 rounded-lg p-6 hover:border-purple-400 hover:shadow-lg transition-all">
+                        <div class="flex items-start justify-between mb-3">
+                            <div>
+                                <h2 class="text-2xl font-bold mb-1">Bola de Fogo</h2>
+                                <div class="flex items-center gap-2 text-sm">
+                                    <span class="px-2 py-1 bg-blue-100 text-blue-700 rounded font-medium">Fogo</span>
+                                    <span class="px-2 py-1 rounded font-medium bg-red-100 text-red-700">Ataque</span>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-2xl font-bold text-purple-600">Nv.3</div>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 mb-4 text-sm">Conjura uma esfera flamejante que explode ao impactar, causando dano em área.</p>
+                        <div class="grid grid-cols-3 gap-2 text-xs mb-4">
+                            <div class="bg-blue-50 p-2 rounded text-center">
+                                <div class="font-semibold text-blue-700">Mana</div>
+                                <div class="text-gray-700">40</div>
+                            </div>
+                            <div class="bg-purple-50 p-2 rounded text-center">
+                                <div class="font-semibold text-purple-700">Cooldown</div>
+                                <div class="text-gray-700">8s</div>
+                            </div>
+                            <div class="bg-green-50 p-2 rounded text-center">
+                                <div class="font-semibold text-green-700">Alcance</div>
+                                <div class="text-gray-700">Longo</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm mb-2">
+                            <span class="font-semibold text-red-600">Dano:</span>
+                            <span class="text-gray-700">120</span>
+                        </div>
+                        <div class="mt-4 text-purple-600 font-medium">Ver detalhes →</div>
+                    </a>
+
+                    <!-- Luz Curativa -->
+                    <a href="spell-healing-light.html" class="bg-white border-2 border-gray-200 rounded-lg p-6 hover:border-purple-400 hover:shadow-lg transition-all">
+                        <div class="flex items-start justify-between mb-3">
+                            <div>
+                                <h2 class="text-2xl font-bold mb-1">Luz Curativa</h2>
+                                <div class="flex items-center gap-2 text-sm">
+                                    <span class="px-2 py-1 bg-blue-100 text-blue-700 rounded font-medium">Luz</span>
+                                    <span class="px-2 py-1 rounded font-medium bg-green-100 text-green-700">Cura</span>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-2xl font-bold text-purple-600">Nv.2</div>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 mb-4 text-sm">Emite luz divina que restaura a saúde de um aliado.</p>
+                        <div class="grid grid-cols-3 gap-2 text-xs mb-4">
+                            <div class="bg-blue-50 p-2 rounded text-center">
+                                <div class="font-semibold text-blue-700">Mana</div>
+                                <div class="text-gray-700">35</div>
+                            </div>
+                            <div class="bg-purple-50 p-2 rounded text-center">
+                                <div class="font-semibold text-purple-700">Cooldown</div>
+                                <div class="text-gray-700">10s</div>
+                            </div>
+                            <div class="bg-green-50 p-2 rounded text-center">
+                                <div class="font-semibold text-green-700">Alcance</div>
+                                <div class="text-gray-700">Médio</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm mb-2">
+                            <span class="font-semibold text-green-600">Cura:</span>
+                            <span class="text-gray-700">150</span>
+                        </div>
+                        <div class="mt-4 text-purple-600 font-medium">Ver detalhes →</div>
+                    </a>
+
+                    <!-- Prisão de Gelo -->
+                    <a href="spell-ice-prison.html" class="bg-white border-2 border-gray-200 rounded-lg p-6 hover:border-purple-400 hover:shadow-lg transition-all">
+                        <div class="flex items-start justify-between mb-3">
+                            <div>
+                                <h2 class="text-2xl font-bold mb-1">Prisão de Gelo</h2>
+                                <div class="flex items-center gap-2 text-sm">
+                                    <span class="px-2 py-1 bg-blue-100 text-blue-700 rounded font-medium">Gelo</span>
+                                    <span class="px-2 py-1 rounded font-medium bg-cyan-100 text-cyan-700">Controle</span>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-2xl font-bold text-purple-600">Nv.4</div>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 mb-4 text-sm">Encapsula um inimigo em gelo sólido, imobilizando-o completamente.</p>
+                        <div class="grid grid-cols-3 gap-2 text-xs mb-4">
+                            <div class="bg-blue-50 p-2 rounded text-center">
+                                <div class="font-semibold text-blue-700">Mana</div>
+                                <div class="text-gray-700">50</div>
+                            </div>
+                            <div class="bg-purple-50 p-2 rounded text-center">
+                                <div class="font-semibold text-purple-700">Cooldown</div>
+                                <div class="text-gray-700">15s</div>
+                            </div>
+                            <div class="bg-green-50 p-2 rounded text-center">
+                                <div class="font-semibold text-green-700">Alcance</div>
+                                <div class="text-gray-700">Médio</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm mb-2">
+                            <span class="font-semibold text-red-600">Dano:</span>
+                            <span class="text-gray-700">60</span>
+                        </div>
+                        <div class="mt-4 text-purple-600 font-medium">Ver detalhes →</div>
+                    </a>
+
+                    <!-- Relâmpago Encadeado -->
+                    <a href="spell-chain-lightning.html" class="bg-white border-2 border-gray-200 rounded-lg p-6 hover:border-purple-400 hover:shadow-lg transition-all">
+                        <div class="flex items-start justify-between mb-3">
+                            <div>
+                                <h2 class="text-2xl font-bold mb-1">Relâmpago Encadeado</h2>
+                                <div class="flex items-center gap-2 text-sm">
+                                    <span class="px-2 py-1 bg-blue-100 text-blue-700 rounded font-medium">Trovão</span>
+                                    <span class="px-2 py-1 rounded font-medium bg-red-100 text-red-700">Ataque</span>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-2xl font-bold text-purple-600">Nv.5</div>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 mb-4 text-sm">Dispara um raio que salta entre múltiplos inimigos.</p>
+                        <div class="grid grid-cols-3 gap-2 text-xs mb-4">
+                            <div class="bg-blue-50 p-2 rounded text-center">
+                                <div class="font-semibold text-blue-700">Mana</div>
+                                <div class="text-gray-700">60</div>
+                            </div>
+                            <div class="bg-purple-50 p-2 rounded text-center">
+                                <div class="font-semibold text-purple-700">Cooldown</div>
+                                <div class="text-gray-700">12s</div>
+                            </div>
+                            <div class="bg-green-50 p-2 rounded text-center">
+                                <div class="font-semibold text-green-700">Alcance</div>
+                                <div class="text-gray-700">Longo</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm mb-2">
+                            <span class="font-semibold text-red-600">Dano:</span>
+                            <span class="text-gray-700">100</span>
+                        </div>
+                        <div class="mt-4 text-purple-600 font-medium">Ver detalhes →</div>
+                    </a>
+
+                    <!-- Pele de Pedra -->
+                    <a href="spell-stone-skin.html" class="bg-white border-2 border-gray-200 rounded-lg p-6 hover:border-purple-400 hover:shadow-lg transition-all">
+                        <div class="flex items-start justify-between mb-3">
+                            <div>
+                                <h2 class="text-2xl font-bold mb-1">Pele de Pedra</h2>
+                                <div class="flex items-center gap-2 text-sm">
+                                    <span class="px-2 py-1 bg-blue-100 text-blue-700 rounded font-medium">Terra</span>
+                                    <span class="px-2 py-1 rounded font-medium bg-blue-100 text-blue-700">Buff</span>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-2xl font-bold text-purple-600">Nv.2</div>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 mb-4 text-sm">Endurece a pele como rocha, aumentando drasticamente a defesa.</p>
+                        <div class="grid grid-cols-3 gap-2 text-xs mb-4">
+                            <div class="bg-blue-50 p-2 rounded text-center">
+                                <div class="font-semibold text-blue-700">Mana</div>
+                                <div class="text-gray-700">30</div>
+                            </div>
+                            <div class="bg-purple-50 p-2 rounded text-center">
+                                <div class="font-semibold text-purple-700">Cooldown</div>
+                                <div class="text-gray-700">20s</div>
+                            </div>
+                            <div class="bg-green-50 p-2 rounded text-center">
+                                <div class="font-semibold text-green-700">Alcance</div>
+                                <div class="text-gray-700">Curto</div>
+                            </div>
+                        </div>
+                        <div class="mt-4 text-purple-600 font-medium">Ver detalhes →</div>
+                    </a>
+
+                    <!-- Passo Sombrio -->
+                    <a href="spell-shadow-step.html" class="bg-white border-2 border-gray-200 rounded-lg p-6 hover:border-purple-400 hover:shadow-lg transition-all">
+                        <div class="flex items-start justify-between mb-3">
+                            <div>
+                                <h2 class="text-2xl font-bold mb-1">Passo Sombrio</h2>
+                                <div class="flex items-center gap-2 text-sm">
+                                    <span class="px-2 py-1 bg-blue-100 text-blue-700 rounded font-medium">Escuridão</span>
+                                    <span class="px-2 py-1 rounded font-medium bg-blue-100 text-blue-700">Buff</span>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-2xl font-bold text-purple-600">Nv.3</div>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 mb-4 text-sm">Desloca-se instantaneamente através das sombras para uma localização próxima.</p>
+                        <div class="grid grid-cols-3 gap-2 text-xs mb-4">
+                            <div class="bg-blue-50 p-2 rounded text-center">
+                                <div class="font-semibold text-blue-700">Mana</div>
+                                <div class="text-gray-700">40</div>
+                            </div>
+                            <div class="bg-purple-50 p-2 rounded text-center">
+                                <div class="font-semibold text-purple-700">Cooldown</div>
+                                <div class="text-gray-700">8s</div>
+                            </div>
+                            <div class="bg-green-50 p-2 rounded text-center">
+                                <div class="font-semibold text-green-700">Alcance</div>
+                                <div class="text-gray-700">Médio</div>
+                            </div>
+                        </div>
+                        <div class="mt-4 text-purple-600 font-medium">Ver detalhes →</div>
+                    </a>
+
+                    <!-- Invocar Espírito Animal -->
+                    <a href="spell-summon-spirit.html" class="bg-white border-2 border-gray-200 rounded-lg p-6 hover:border-purple-400 hover:shadow-lg transition-all">
+                        <div class="flex items-start justify-between mb-3">
+                            <div>
+                                <h2 class="text-2xl font-bold mb-1">Invocar Espírito Animal</h2>
+                                <div class="flex items-center gap-2 text-sm">
+                                    <span class="px-2 py-1 bg-blue-100 text-blue-700 rounded font-medium">Natureza</span>
+                                    <span class="px-2 py-1 rounded font-medium bg-yellow-100 text-yellow-700">Invocação</span>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-2xl font-bold text-purple-600">Nv.4</div>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 mb-4 text-sm">Invoca um espírito animal para lutar ao seu lado.</p>
+                        <div class="grid grid-cols-3 gap-2 text-xs mb-4">
+                            <div class="bg-blue-50 p-2 rounded text-center">
+                                <div class="font-semibold text-blue-700">Mana</div>
+                                <div class="text-gray-700">55</div>
+                            </div>
+                            <div class="bg-purple-50 p-2 rounded text-center">
+                                <div class="font-semibold text-purple-700">Cooldown</div>
+                                <div class="text-gray-700">30s</div>
+                            </div>
+                            <div class="bg-green-50 p-2 rounded text-center">
+                                <div class="font-semibold text-green-700">Alcance</div>
+                                <div class="text-gray-700">Curto</div>
+                            </div>
+                        </div>
+                        <div class="mt-4 text-purple-600 font-medium">Ver detalhes →</div>
+                    </a>
+
+                    <!-- Meteoro -->
+                    <a href="spell-meteor.html" class="bg-white border-2 border-gray-200 rounded-lg p-6 hover:border-purple-400 hover:shadow-lg transition-all">
+                        <div class="flex items-start justify-between mb-3">
+                            <div>
+                                <h2 class="text-2xl font-bold mb-1">Meteoro</h2>
+                                <div class="flex items-center gap-2 text-sm">
+                                    <span class="px-2 py-1 bg-blue-100 text-blue-700 rounded font-medium">Fogo</span>
+                                    <span class="px-2 py-1 rounded font-medium bg-red-100 text-red-700">Ataque</span>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-2xl font-bold text-purple-600">Nv.8</div>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 mb-4 text-sm">Invoca um meteoro ardente dos céus que devasta uma grande área.</p>
+                        <div class="grid grid-cols-3 gap-2 text-xs mb-4">
+                            <div class="bg-blue-50 p-2 rounded text-center">
+                                <div class="font-semibold text-blue-700">Mana</div>
+                                <div class="text-gray-700">120</div>
+                            </div>
+                            <div class="bg-purple-50 p-2 rounded text-center">
+                                <div class="font-semibold text-purple-700">Cooldown</div>
+                                <div class="text-gray-700">60s</div>
+                            </div>
+                            <div class="bg-green-50 p-2 rounded text-center">
+                                <div class="font-semibold text-green-700">Alcance</div>
+                                <div class="text-gray-700">Longo</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm mb-2">
+                            <span class="font-semibold text-red-600">Dano:</span>
+                            <span class="text-gray-700">350</span>
+                        </div>
+                        <div class="mt-4 text-purple-600 font-medium">Ver detalhes →</div>
+                    </a>
+
+                    <!-- Drenar Vida -->
+                    <a href="spell-life-drain.html" class="bg-white border-2 border-gray-200 rounded-lg p-6 hover:border-purple-400 hover:shadow-lg transition-all">
+                        <div class="flex items-start justify-between mb-3">
+                            <div>
+                                <h2 class="text-2xl font-bold mb-1">Drenar Vida</h2>
+                                <div class="flex items-center gap-2 text-sm">
+                                    <span class="px-2 py-1 bg-blue-100 text-blue-700 rounded font-medium">Escuridão</span>
+                                    <span class="px-2 py-1 rounded font-medium bg-red-100 text-red-700">Ataque</span>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-2xl font-bold text-purple-600">Nv.3</div>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 mb-4 text-sm">Drena a força vital do inimigo, convertendo-a em vida própria.</p>
+                        <div class="grid grid-cols-3 gap-2 text-xs mb-4">
+                            <div class="bg-blue-50 p-2 rounded text-center">
+                                <div class="font-semibold text-blue-700">Mana</div>
+                                <div class="text-gray-700">45</div>
+                            </div>
+                            <div class="bg-purple-50 p-2 rounded text-center">
+                                <div class="font-semibold text-purple-700">Cooldown</div>
+                                <div class="text-gray-700">10s</div>
+                            </div>
+                            <div class="bg-green-50 p-2 rounded text-center">
+                                <div class="font-semibold text-green-700">Alcance</div>
+                                <div class="text-gray-700">Médio</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm mb-2">
+                            <span class="font-semibold text-red-600">Dano:</span>
+                            <span class="text-gray-700">80</span>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm mb-2">
+                            <span class="font-semibold text-green-600">Cura:</span>
+                            <span class="text-gray-700">60</span>
+                        </div>
+                        <div class="mt-4 text-purple-600 font-medium">Ver detalhes →</div>
+                    </a>
+
+                    <!-- Escudo Aquático -->
+                    <a href="spell-water-shield.html" class="bg-white border-2 border-gray-200 rounded-lg p-6 hover:border-purple-400 hover:shadow-lg transition-all">
+                        <div class="flex items-start justify-between mb-3">
+                            <div>
+                                <h2 class="text-2xl font-bold mb-1">Escudo Aquático</h2>
+                                <div class="flex items-center gap-2 text-sm">
+                                    <span class="px-2 py-1 bg-blue-100 text-blue-700 rounded font-medium">Água</span>
+                                    <span class="px-2 py-1 rounded font-medium bg-blue-100 text-blue-700">Buff</span>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-2xl font-bold text-purple-600">Nv.2</div>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 mb-4 text-sm">Cria um escudo de água que absorve dano e cura gradualmente.</p>
+                        <div class="grid grid-cols-3 gap-2 text-xs mb-4">
+                            <div class="bg-blue-50 p-2 rounded text-center">
+                                <div class="font-semibold text-blue-700">Mana</div>
+                                <div class="text-gray-700">35</div>
+                            </div>
+                            <div class="bg-purple-50 p-2 rounded text-center">
+                                <div class="font-semibold text-purple-700">Cooldown</div>
+                                <div class="text-gray-700">15s</div>
+                            </div>
+                            <div class="bg-green-50 p-2 rounded text-center">
+                                <div class="font-semibold text-green-700">Alcance</div>
+                                <div class="text-gray-700">Curto</div>
+                            </div>
+                        </div>
+                        <div class="mt-4 text-purple-600 font-medium">Ver detalhes →</div>
+                    </a>
+
+                    <!-- Golpe Relâmpago -->
+                    <a href="spell-lightning-strike.html" class="bg-white border-2 border-gray-200 rounded-lg p-6 hover:border-purple-400 hover:shadow-lg transition-all">
+                        <div class="flex items-start justify-between mb-3">
+                            <div>
+                                <h2 class="text-2xl font-bold mb-1">Golpe Relâmpago</h2>
+                                <div class="flex items-center gap-2 text-sm">
+                                    <span class="px-2 py-1 bg-blue-100 text-blue-700 rounded font-medium">Trovão</span>
+                                    <span class="px-2 py-1 rounded font-medium bg-red-100 text-red-700">Ataque</span>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-2xl font-bold text-purple-600">Nv.6</div>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 mb-4 text-sm">Invoca um raio preciso dos céus que atinge um único alvo com poder devastador.</p>
+                        <div class="grid grid-cols-3 gap-2 text-xs mb-4">
+                            <div class="bg-blue-50 p-2 rounded text-center">
+                                <div class="font-semibold text-blue-700">Mana</div>
+                                <div class="text-gray-700">70</div>
+                            </div>
+                            <div class="bg-purple-50 p-2 rounded text-center">
+                                <div class="font-semibold text-purple-700">Cooldown</div>
+                                <div class="text-gray-700">18s</div>
+                            </div>
+                            <div class="bg-green-50 p-2 rounded text-center">
+                                <div class="font-semibold text-green-700">Alcance</div>
+                                <div class="text-gray-700">Longo</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm mb-2">
+                            <span class="font-semibold text-red-600">Dano:</span>
+                            <span class="text-gray-700">200</span>
+                        </div>
+                        <div class="mt-4 text-purple-600 font-medium">Ver detalhes →</div>
+                    </a>
+
+                    <!-- Levantar Mortos -->
+                    <a href="spell-raise-dead.html" class="bg-white border-2 border-gray-200 rounded-lg p-6 hover:border-purple-400 hover:shadow-lg transition-all">
+                        <div class="flex items-start justify-between mb-3">
+                            <div>
+                                <h2 class="text-2xl font-bold mb-1">Levantar Mortos</h2>
+                                <div class="flex items-center gap-2 text-sm">
+                                    <span class="px-2 py-1 bg-blue-100 text-blue-700 rounded font-medium">Escuridão</span>
+                                    <span class="px-2 py-1 rounded font-medium bg-yellow-100 text-yellow-700">Invocação</span>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-2xl font-bold text-purple-600">Nv.5</div>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 mb-4 text-sm">Ressuscita cadáveres como servos mortos-vivos sob seu comando.</p>
+                        <div class="grid grid-cols-3 gap-2 text-xs mb-4">
+                            <div class="bg-blue-50 p-2 rounded text-center">
+                                <div class="font-semibold text-blue-700">Mana</div>
+                                <div class="text-gray-700">80</div>
+                            </div>
+                            <div class="bg-purple-50 p-2 rounded text-center">
+                                <div class="font-semibold text-purple-700">Cooldown</div>
+                                <div class="text-gray-700">25s</div>
+                            </div>
+                            <div class="bg-green-50 p-2 rounded text-center">
+                                <div class="font-semibold text-green-700">Alcance</div>
+                                <div class="text-gray-700">Médio</div>
+                            </div>
+                        </div>
+                        <div class="mt-4 text-purple-600 font-medium">Ver detalhes →</div>
+                    </a>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
+<!-- spell-fireball.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bola de Fogo - Magias - FoFi Wiki</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white">
+    <div class="min-h-screen flex">
+        <!-- Sidebar -->
+        <aside class="w-64 border-r border-gray-200 bg-gray-50">
+            <div class="p-4 border-b border-gray-200 bg-white">
+                <a href="index.html" class="flex items-center gap-2">
+                    <span class="text-2xl">📚</span>
+                    <div><p class="text-xs text-gray-500">FoFi Wiki</p></div>
+                </a>
+            </div>
+            <nav class="p-4 space-y-1">
+                <a href="index.html" class="flex items-center gap-3 px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100">
+                    <span>📚</span>Página Inicial
+                </a>
+                <a href="elements.html" class="flex items-center gap-3 px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100">
+                    <span>🔥</span>Elementos
+                </a>
+                <a href="classes.html" class="flex items-center gap-3 px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100">
+                    <span>⚔️</span>Classes
+                </a>
+                <a href="spells.html" class="flex items-center gap-3 px-3 py-2 rounded-md bg-blue-100 text-blue-700 font-medium">
+                    <span>📜</span>Magias
+                </a>
+                <a href="creatures.html" class="flex items-center gap-3 px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100">
+                    <span>👥</span>Criaturas
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 overflow-auto">
+            <div class="max-w-4xl mx-auto p-8">
+                <a href="spells.html" class="inline-flex items-center gap-2 text-blue-600 hover:underline mb-6">
+                    ← Voltar para Magias
+                </a>
+
+                <!-- Header -->
+                <div class="bg-red-50 border-2 border-red-300 rounded-lg p-8 mb-8">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="flex-1">
+                            <h1 class="text-4xl font-bold mb-2">Bola de Fogo</h1>
+                            <p class="text-xl text-gray-600 mb-3">Conjura uma esfera flamejante que explode ao impactar, causando dano em área.</p>
+                            <div class="flex items-center gap-2">
+                                <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full font-medium text-sm">Fogo</span>
+                                <span class="px-3 py-1 rounded-full font-medium text-sm bg-red-50 text-red-700 border border-red-300">Ataque</span>
+                                <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full font-medium text-sm">Nível 3</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stats -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                    <div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                        <span class="font-semibold text-sm">Custo de Mana</span>
+                        <div class="text-2xl font-bold text-blue-700">40</div>
+                    </div>
+                    <div class="bg-purple-50 border border-purple-200 rounded-lg p-4">
+                        <span class="font-semibold text-sm">Cooldown</span>
+                        <div class="text-2xl font-bold text-purple-700">8s</div>
+                    </div>
+                    <div class="bg-green-50 border border-green-200 rounded-lg p-4">
+                        <span class="font-semibold text-sm">Alcance</span>
+                        <div class="text-xl font-bold text-green-700">Longo</div>
+                    </div>
+                    <div class="bg-red-50 border-red-200 border rounded-lg p-4">
+                        <span class="font-semibold text-sm">Dano</span>
+                        <div class="text-2xl font-bold text-red-700">120</div>
+                    </div>
+                </div>
+
+                <!-- Effects -->
+                <div class="bg-white border border-gray-200 rounded-lg p-6 mb-8">
+                    <h2 class="text-2xl font-bold mb-4">Efeitos</h2>
+                    <ul class="space-y-2">
+                        <li class="flex items-start gap-3">
+                            <span class="text-purple-600 font-bold mt-1">•</span>
+                            <span class="text-gray-700">Dano de fogo em área de 5m</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-purple-600 font-bold mt-1">•</span>
+                            <span class="text-gray-700">20% de chance de queimadura (10 dano/seg por 5 seg)</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-purple-600 font-bold mt-1">•</span>
+                            <span class="text-gray-700">Ignora 15% da resistência a fogo</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Required Classes -->
+                <div class="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-8">
+                    <h2 class="text-2xl font-bold mb-4">Classes que Podem Usar</h2>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-4 py-2 bg-blue-100 border border-blue-300 rounded-full font-medium">Mago Elemental</span>
+                        <span class="px-4 py-2 bg-blue-100 border border-blue-300 rounded-full font-medium">Guerreiro Elemental</span>
+                    </div>
+                </div>
+
+                <!-- Lore -->
+                <div class="bg-gray-50 border border-gray-200 rounded-lg p-6 mb-8">
+                    <h2 class="text-2xl font-bold mb-4">História e Tradição</h2>
+                    <p class="text-gray-700 leading-relaxed">A magia mais icônica dos piromantes. Dizem que o primeiro Bola de Fogo foi conjurado durante a Batalha das Chamas Eternas e seu poder era tão grande que iluminou o céu por três dias.</p>
+                </div>
+
+                <!-- Tips -->
+                <div class="bg-amber-50 border border-amber-200 rounded-lg p-6 mb-8">
+                    <h2 class="text-2xl font-bold mb-4">Dicas de Uso</h2>
+                    <div class="space-y-2 text-sm text-gray-700">
+                        <p>• Combine com outras habilidades para maximizar dano</p>
+                        <p>• Preste atenção no cooldown em combates prolongados</p>
+                        <p>• Use quando o inimigo estiver vulnerável para máxima eficácia</p>
+                    </div>
+                </div>
+
+                <!-- Navigation -->
+                <div class="flex gap-4">
+                    <a href="classes.html" class="flex-1 p-4 bg-blue-50 border border-blue-200 rounded-lg hover:bg-blue-100 transition-colors text-center font-semibold">
+                        Ver Classes →
+                    </a>
+                    <a href="elements.html" class="flex-1 p-4 bg-red-50 border border-red-200 rounded-lg hover:bg-red-100 transition-colors text-center font-semibold">
+                        Ver Elementos →
+                    </a>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
+<!-- creatures.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criaturas - FoFi Wiki</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white">
+    <div class="min-h-screen flex">
+        <!-- Sidebar -->
+        <aside class="w-64 border-r border-gray-200 bg-gray-50">
+            <div class="p-4 border-b border-gray-200 bg-white">
+                <a href="index.html" class="flex items-center gap-2">
+                    <span class="text-2xl">📚</span>
+                    <div><p class="text-xs text-gray-500">FoFi Wiki</p></div>
+                </a>
+            </div>
+            <nav class="p-4 space-y-1">
+                <a href="index.html" class="flex items-center gap-3 px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100">
+                    <span>📚</span>Página Inicial
+                </a>
+                <a href="elements.html" class="flex items-center gap-3 px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100">
+                    <span>🔥</span>Elementos
+                </a>
+                <a href="classes.html" class="flex items-center gap-3 px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100">
+                    <span>⚔️</span>Classes
+                </a>
+                <a href="spells.html" class="flex items-center gap-3 px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100">
+                    <span>📜</span>Magias
+                </a>
+                <a href="creatures.html" class="flex items-center gap-3 px-3 py-2 rounded-md bg-blue-100 text-blue-700 font-medium">
+                    <span>👥</span>Criaturas
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 overflow-auto">
+            <div class="max-w-6xl mx-auto p-8">
+                <div class="mb-8">
+                    <h1 class="text-4xl font-bold mb-2">Bestiário de Elementia</h1>
+                    <p class="text-gray-600 text-lg">Catálogo completo de criaturas, monstros e chefes encontrados no mundo.</p>
+                </div>
+
+                <!-- Filters -->
+                <div class="bg-white border border-gray-200 rounded-lg p-6 mb-8">
+                    <h2 class="font-semibold mb-4">Filtros</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Elemento</label>
+                            <select class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                <option>Todos</option>
+                                <option>Fogo</option>
+                                <option>Água</option>
+                                <option>Terra</option>
+                                <option>Gelo</option>
+                                <option>Trovão</option>
+                                <option>Natureza</option>
+                                <option>Escuridão</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Tipo</label>
+                            <select class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                <option>Todos</option>
+                                <option>Elemental</option>
+                                <option>Besta</option>
+                                <option>Morto-Vivo</option>
+                                <option>Dragão</option>
+                                <option>Espírito</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-4 text-sm text-gray-600">Exibindo 10 de 10 criaturas</div>
+
+                <!-- Creatures Grid -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    <!-- Elemental de Fogo -->
+                    <a href="creature-fire-elemental.html" class="bg-white border-2 border-gray-200 rounded-lg p-6 hover:border-green-400 hover:shadow-lg transition-all">
+                        <div class="flex items-start justify-between mb-3">
+                            <div>
+                                <h2 class="text-2xl font-bold mb-1">Elemental de Fogo</h2>
+                                <div class="flex items-center gap-2 text-sm">
+                                    <span class="px-2 py-1 rounded font-medium bg-blue-100 text-blue-700">Elemental</span>
+                                    <span class="px-2 py-1 bg-blue-100 text-blue-700 rounded font-medium">Fogo</span>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-2xl font-bold text-green-600">Nv.15</div>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 mb-4 text-sm">Ser de puro fogo, nascido dos vulcões e das chamas eternas. Extremamente hostil a intrusos.</p>
+                        <div class="grid grid-cols-3 gap-2 text-xs mb-4">
+                            <div class="bg-red-50 p-2 rounded text-center">
+                                <div class="font-semibold text-red-700">HP</div>
+                                <div class="text-gray-700">2,500</div>
+                            </div>
+                            <div class="bg-orange-50 p-2 rounded text-center">
+                                <div class="font-semibold text-orange-700">Dano</div>
+                                <div class="text-gray-700">180</div>
+                            </div>
+                            <div class="bg-blue-50 p-2 rounded text-center">
+                                <div class="font-semibold text-blue-700">Defesa</div>
+                                <div class="text-gray-700">60</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm mb-2">
+                            <span class="font-semibold">Habitat:</span>
+                            <span class="text-gray-600 truncate">Vulcões, Cavernas Vulcânicas</span>
+                        </div>
+                        <div class="mt-4 text-green-600 font-medium">Ver detalhes completos →</div>
+                    </a>
+
+                    <!-- Draco Glacial -->
+                    <a href="creature-ice-drake.html" class="bg-white border-2 border-gray-200 rounded-lg p-6 hover:border-green-400 hover:shadow-lg transition-all">
+                        <div class="flex items-start justify-between mb-3">
+                            <div>
+                                <h2 class="text-2xl font-bold mb-1">Draco Glacial</h2>
+                                <div class="flex items-center gap-2 text-sm">
+                                    <span class="px-2 py-1 rounded font-medium bg-red-100 text-red-700">Dragão</span>
+                                    <span class="px-2 py-1 bg-blue-100 text-blue-700 rounded font-medium">Gelo</span>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-2xl font-bold text-orange-600">Nv.35</div>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 mb-4 text-sm">Dragão do gelo com escamas cristalinas. Um dos predadores mais temidos das terras congeladas.</p>
+                        <div class="grid grid-cols-3 gap-2 text-xs mb-4">
+                            <div class="bg-red-50 p-2 rounded text-center">
+                                <div class="font-semibold text-red-700">HP</div>
+                                <div class="text-gray-700">8,000</div>
+                            </div>
+                            <div class="bg-orange-50 p-2 rounded text-center">
+                                <div class="font-semibold text-orange-700">Dano</div>
+                                <div class="text-gray-700">320</div>
+                            </div>
+                            <div class="bg-blue-50 p-2 rounded text-center">
+                                <div class="font-semibold text-blue-700">Defesa</div>
+                                <div class="text-gray-700">180</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm mb-2">
+                            <span class="font-semibold">Habitat:</span>
+                            <span class="text-gray-600 truncate">Montanhas Geladas, Cavernas de Gelo</span>
+                        </div>
+                        <div class="mt-4 text-green-600 font-medium">Ver detalhes completos →</div>
+                    </a>
+
+                    <!-- Guardião da Floresta -->
+                    <a href="creature-forest-guardian.html" class="bg-white border-2 border-gray-200 rounded-lg p-6 hover:border-green-400 hover:shadow-lg transition-all">
+                        <div class="flex items-start justify-between mb-3">
+                            <div>
+                                <h2 class="text-2xl font-bold mb-1">Guardião da Floresta</h2>
+                                <div class="flex items-center gap-2 text-sm">
+                                    <span class="px-2 py-1 rounded font-medium bg-cyan-100 text-cyan-700">Espírito</span>
+                                    <span class="px-2 py-1 bg-blue-100 text-blue-700 rounded font-medium">Natureza</span>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-2xl font-bold text-yellow-600">Nv.25</div>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 mb-4 text-sm">Antigo espírito da floresta que protege as árvores sagradas. Aparece como um ent colossal.</p>
+                        <div class="grid grid-cols-3 gap-2 text-xs mb-4">
+                            <div class="bg-red-50 p-2 rounded text-center">
+                                <div class="font-semibold text-red-700">HP</div>
+                                <div class="text-gray-700">4,500</div>
+                            </div>
+                            <div class="bg-orange-50 p-2 rounded text-center">
+                                <div class="font-semibold text-orange-700">Dano</div>
+                                <div class="text-gray-700">200</div>
+                            </div>
+                            <div class="bg-blue-50 p-2 rounded text-center">
+                                <div class="font-semibold text-blue-700">Defesa</div>
+                                <div class="text-gray-700">120</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm mb-2">
+                            <span class="font-semibold">Habitat:</span>
+                            <span class="text-gray-600 truncate">Florestas Antigas, Bosques Sagrados</span>
+                        </div>
+                        <div class="mt-4 text-green-600 font-medium">Ver detalhes completos →</div>
+                    </a>
+
+                    <!-- Espectro Sombrio -->
+                    <a href="creature-shadow-wraith.html" class="bg-white border-2 border-gray-200 rounded-lg p-6 hover:border-green-400 hover:shadow-lg transition-all">
+                        <div class="flex items-start justify-between mb-3">
+                            <div>
+                                <h2 class="text-2xl font-bold mb-1">Espectro Sombrio</h2>
+                                <div class="flex items-center gap-2 text-sm">
+                                    <span class="px-2 py-1 rounded font-medium bg-purple-100 text-purple-700">Morto-Vivo</span>
+                                    <span class="px-2 py-1 bg-blue-100 text-blue-700 rounded font-medium">Escuridão</span>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-2xl font-bold text-yellow-600">Nv.28</div>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 mb-4 text-sm">Alma torturada presa entre mundos, alimenta-se do medo e da vida dos vivos.</p>
+                        <div class="grid grid-cols-3 gap-2 text-xs mb-4">
+                            <div class="bg-red-50 p-2 rounded text-center">
+                                <div class="font-semibold text-red-700">HP</div>
+                                <div class="text-gray-700">3,200</div>
+                            </div>
+                            <div class="bg-orange-50 p-2 rounded text-center">
+                                <div class="font-semibold text-orange-700">Dano</div>
+                                <div class="text-gray-700">250</div>
+                            </div>
+                            <div class="bg-blue-50 p-2 rounded text-center">
+                                <div class="font-semibold text-blue-700">Defesa</div>
+                                <div class="text-gray-700">80</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm mb-2">
+                            <span class="font-semibold">Habitat:</span>
+                            <span class="text-gray-600 truncate">Cemitérios, Ruínas Amaldiçoadas</span>
+                        </div>
+                        <div class="mt-4 text-green-600 font-medium">Ver detalhes completos →</div>
+                    </a>
+
+                    <!-- Fênix Tempestuosa -->
+                    <a href="creature-storm-phoenix.html" class="bg-white border-2 border-gray-200 rounded-lg p-6 hover:border-green-400 hover:shadow-lg transition-all">
+                        <div class="flex items-start justify-between mb-3">
+                            <div>
+                                <h2 class="text-2xl font-bold mb-1">Fênix Tempestuosa</h2>
+                                <div class="flex items-center gap-2 text-sm">
+                                    <span class="px-2 py-1 rounded font-medium bg-blue-100 text-blue-700">Elemental</span>
+                                    <span class="px-2 py-1 bg-blue-100 text-blue-700 rounded font-medium">Trovão</span>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-2xl font-bold text-orange-600">Nv.40</div>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 mb-4 text-sm">Ave lendária que cavalga as tempestades. Quando morre, renasce em uma explosão de raios.</p>
+                        <div class="grid grid-cols-3 gap-2 text-xs mb-4">
+                            <div class="bg-red-50 p-2 rounded text-center">
+                                <div class="font-semibold text-red-700">HP</div>
+                                <div class="text-gray-700">6,000</div>
+                            </div>
+                            <div class="bg-orange-50 p-2 rounded text-center">
+                                <div class="font-semibold text-orange-700">Dano</div>
+                                <div class="text-gray-700">380</div>
+                            </div>
+                            <div class="bg-blue-50 p-2 rounded text-center">
+                                <div class="font-semibold text-blue-700">Defesa</div>
+                                <div class="text-gray-700">140</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm mb-2">
+                            <span class="font-semibold">Habitat:</span>
+                            <span class="text-gray-600 truncate">Picos Mais Altos, Olho da Tempestade</span>
+                        </div>
+                        <div class="mt-4 text-green-600 font-medium">Ver detalhes completos →</div>
+                    </a>
+
+                    <!-- Dragão Elemental Primordial -->
+                    <a href="creature-dragon.html" class="bg-white border-2 border-gray-200 rounded-lg p-6 hover:border-green-400 hover:shadow-lg transition-all ring-4 ring-yellow-300">
+                        <div class="flex items-start justify-between mb-3">
+                            <div>
+                                <h2 class="text-2xl font-bold mb-1 flex items-center gap-2">
+                                    Dragão Elemental Primordial
+                                    <span class="text-2xl">👑</span>
+                                </h2>
+                                <div class="flex items-center gap-2 text-sm">
+                                    <span class="px-2 py-1 rounded font-medium bg-red-100 text-red-700">Dragão</span>
+                                    <span class="px-2 py-1 bg-blue-100 text-blue-700 rounded font-medium">Fogo</span>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-2xl font-bold text-red-600">Nv.50</div>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 mb-4 text-sm">O mais antigo e poderoso dos dragões. Mestre de todos os elementos. Boss lendário.</p>
+                        <div class="grid grid-cols-3 gap-2 text-xs mb-4">
+                            <div class="bg-red-50 p-2 rounded text-center">
+                                <div class="font-semibold text-red-700">HP</div>
+                                <div class="text-gray-700">15,000</div>
+                            </div>
+                            <div class="bg-orange-50 p-2 rounded text-center">
+                                <div class="font-semibold text-orange-700">Dano</div>
+                                <div class="text-gray-700">500</div>
+                            </div>
+                            <div class="bg-blue-50 p-2 rounded text-center">
+                                <div class="font-semibold text-blue-700">Defesa</div>
+                                <div class="text-gray-700">300</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2 text-sm mb-2">
+                            <span class="font-semibold">Habitat:</span>
+                            <span class="text-gray-600 truncate">Pico do Dragão, Covil Primordial</span>
+                        </div>
+                        <div class="mt-4 text-green-600 font-medium">Ver detalhes completos →</div>
+                    </a>
+                </div>
+
+                <!-- Level Guide -->
+                <div class="mt-12 bg-gray-50 rounded-lg border border-gray-200 p-6">
+                    <h2 class="text-2xl font-bold mb-4">Guia de Níveis</h2>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+                        <div class="p-3 bg-green-50 border border-green-200 rounded">
+                            <div class="font-bold text-green-700 mb-1">Nv. 1-15</div>
+                            <div class="text-gray-600">Iniciante</div>
+                        </div>
+                        <div class="p-3 bg-yellow-50 border border-yellow-200 rounded">
+                            <div class="font-bold text-yellow-700 mb-1">Nv. 16-30</div>
+                            <div class="text-gray-600">Intermediário</div>
+                        </div>
+                        <div class="p-3 bg-orange-50 border border-orange-200 rounded">
+                            <div class="font-bold text-orange-700 mb-1">Nv. 31-40</div>
+                            <div class="text-gray-600">Avançado</div>
+                        </div>
+                        <div class="p-3 bg-red-50 border border-red-200 rounded">
+                            <div class="font-bold text-red-700 mb-1">Nv. 41+</div>
+                            <div class="text-gray-600">Lendário</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
+<!-- creature-dragon.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragão Elemental Primordial - Criaturas - FoFi Wiki</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white">
+    <div class="min-h-screen flex">
+        <!-- Sidebar -->
+        <aside class="w-64 border-r border-gray-200 bg-gray-50">
+            <div class="p-4 border-b border-gray-200 bg-white">
+                <a href="index.html" class="flex items-center gap-2">
+                    <span class="text-2xl">📚</span>
+                    <div><p class="text-xs text-gray-500">FoFi Wiki</p></div>
+                </a>
+            </div>
+            <nav class="p-4 space-y-1">
+                <a href="index.html" class="flex items-center gap-3 px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100">
+                    <span>📚</span>Página Inicial
+                </a>
+                <a href="elements.html" class="flex items-center gap-3 px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100">
+                    <span>🔥</span>Elementos
+                </a>
+                <a href="classes.html" class="flex items-center gap-3 px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100">
+                    <span>⚔️</span>Classes
+                </a>
+                <a href="spells.html" class="flex items-center gap-3 px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100">
+                    <span>📜</span>Magias
+                </a>
+                <a href="creatures.html" class="flex items-center gap-3 px-3 py-2 rounded-md bg-blue-100 text-blue-700 font-medium">
+                    <span>👥</span>Criaturas
+                </a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 overflow-auto">
+            <div class="max-w-4xl mx-auto p-8">
+                <a href="creatures.html" class="inline-flex items-center gap-2 text-blue-600 hover:underline mb-6">
+                    ← Voltar para Criaturas
+                </a>
+
+                <!-- Header -->
+                <div class="bg-red-50 border-2 border-red-300 rounded-lg p-8 mb-8 ring-4 ring-yellow-300">
+                    <div class="flex items-start justify-between mb-4">
+                        <div>
+                            <div class="flex items-center gap-3 mb-2">
+                                <h1 class="text-4xl font-bold">Dragão Elemental Primordial</h1>
+                                <span class="text-3xl">👑</span>
+                            </div>
+                            <p class="text-xl text-gray-600 mb-3">O mais antigo e poderoso dos dragões. Mestre de todos os elementos. Boss lendário.</p>
+                            <div class="flex items-center gap-2">
+                                <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full font-medium text-sm">Dragão</span>
+                                <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full font-medium text-sm">Fogo</span>
+                                <span class="px-3 py-1 rounded-full font-medium text-sm bg-red-100 text-red-700">Nível 50</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stats -->
+                <div class="grid grid-cols-3 gap-4 mb-8">
+                    <div class="bg-red-50 border border-red-200 rounded-lg p-6">
+                        <span class="font-semibold text-sm">Pontos de Vida</span>
+                        <div class="text-3xl font-bold text-red-700">15,000</div>
+                    </div>
+                    <div class="bg-orange-50 border border-orange-200 rounded-lg p-6">
+                        <span class="font-semibold text-sm">Dano</span>
+                        <div class="text-3xl font-bold text-orange-700">500</div>
+                    </div>
+                    <div class="bg-blue-50 border border-blue-200 rounded-lg p-6">
+                        <span class="font-semibold text-sm">Defesa</span>
+                        <div class="text-3xl font-bold text-blue-700">300</div>
+                    </div>
+                </div>
+
+                <!-- Abilities -->
+                <div class="bg-white border border-gray-200 rounded-lg p-6 mb-8">
+                    <h2 class="text-2xl font-bold mb-4">Habilidades</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                        <div class="flex items-center gap-3 p-3 bg-purple-50 border border-purple-200 rounded-lg">
+                            <div class="flex-shrink-0 w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold text-sm">1</div>
+                            <span class="font-medium">Sopro Elemental (todos os elementos)</span>
+                        </div>
+                        <div class="flex items-center gap-3 p-3 bg-purple-50 border border-purple-200 rounded-lg">
+                            <div class="flex-shrink-0 w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold text-sm">2</div>
+                            <span class="font-medium">Voo Divino</span>
+                        </div>
+                        <div class="flex items-center gap-3 p-3 bg-purple-50 border border-purple-200 rounded-lg">
+                            <div class="flex-shrink-0 w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold text-sm">3</div>
+                            <span class="font-medium">Cauda Devastadora</span>
+                        </div>
+                        <div class="flex items-center gap-3 p-3 bg-purple-50 border border-purple-200 rounded-lg">
+                            <div class="flex-shrink-0 w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold text-sm">4</div>
+                            <span class="font-medium">Invocar Elementais</span>
+                        </div>
+                        <div class="flex items-center gap-3 p-3 bg-purple-50 border border-purple-200 rounded-lg">
+                            <div class="flex-shrink-0 w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold text-sm">5</div>
+                            <span class="font-medium">Forma Primordial</span>
+                        </div>
+                        <div class="flex items-center gap-3 p-3 bg-purple-50 border border-purple-200 rounded-lg">
+                            <div class="flex-shrink-0 w-8 h-8 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold text-sm">6</div>
+                            <span class="font-medium">Ira Dracônica</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Weaknesses -->
+                <div class="bg-red-50 border border-red-200 rounded-lg p-6 mb-8">
+                    <h2 class="text-2xl font-bold mb-3 text-red-700">Fraquezas</h2>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-4 py-2 bg-red-100 border border-red-300 rounded-full font-medium">Nenhuma conhecida (requer grupo de heróis)</span>
+                    </div>
+                </div>
+
+                <!-- Drops -->
+                <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-6 mb-8">
+                    <h2 class="text-2xl font-bold text-yellow-700 mb-4">Itens que Dropam</h2>
+                    <ul class="space-y-2">
+                        <li class="flex items-center gap-3">
+                            <span class="text-yellow-600">•</span>
+                            <span class="font-bold text-purple-700">Coração de Dragão (lendário)</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="text-yellow-600">•</span>
+                            <span class="font-bold text-purple-700">Escama Primordial (lendário)</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="text-yellow-600">•</span>
+                            <span class="text-gray-700">Sangue de Dragão</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="text-yellow-600">•</span>
+                            <span class="font-bold text-purple-700">Olho do Dragão (mítico)</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="text-yellow-600">•</span>
+                            <span class="font-bold text-purple-700">Espada Draconiana (arma lendária)</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Habitat -->
+                <div class="bg-green-50 border border-green-200 rounded-lg p-6 mb-8">
+                    <h2 class="text-2xl font-bold text-green-700 mb-3">Habitat</h2>
+                    <p class="text-gray-700">Pico do Dragão, Covil Primordial</p>
+                </div>
+
+                <!-- Behavior -->
+                <div class="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-8">
+                    <h2 class="text-2xl font-bold text-blue-700 mb-3">Comportamento</h2>
+                    <p class="text-gray-700">Extremamente inteligente e poderoso. Pode falar e negociar, mas raramente tem interesse em mortais.</p>
+                </div>
+
+                <!-- Lore -->
+                <div class="bg-gray-50 border border-gray-200 rounded-lg p-6 mb-8">
+                    <h2 class="text-2xl font-bold mb-4">História e Tradição</h2>
+                    <p class="text-gray-700 leading-relaxed">O Dragão Elemental Primordial é uma força da natureza. Nascido no início dos tempos, ele testemunhou a criação e destruição de civilizações inteiras. Seu poder é incomparável, e apenas os maiores heróis ousam desafiá-lo. Dizem que em seu covil existem tesouros de mil reinos perdidos.</p>
+                </div>
+
+                <!-- Combat Tips -->
+                <div class="bg-amber-50 border border-amber-200 rounded-lg p-6 mb-8">
+                    <h2 class="text-2xl font-bold mb-4">Dicas de Combate</h2>
+                    <div class="space-y-2 text-sm text-gray-700">
+                        <p>• <strong>Prepare-se:</strong> Traga poções e equipamentos adequados para o nível da criatura</p>
+                        <p>• <strong>Exploite fraquezas:</strong> Use magias e ataques do elemento que a criatura é fraca</p>
+                        <p>• <strong>Aprenda padrões:</strong> Observe os ataques e habilidades para antecipar movimentos</p>
+                        <p>• <strong>Grupo recomendado:</strong> Esta criatura é melhor enfrentada em grupo</p>
+                        <p class="text-red-700 font-bold">• ⚠️ BOSS LENDÁRIO: Requer grupo completo e estratégia coordenada!</p>
+                    </div>
+                </div>
+
+                <!-- Navigation -->
+                <div class="flex gap-4">
+                    <a href="elements.html" class="flex-1 p-4 bg-red-50 border border-red-200 rounded-lg hover:bg-red-100 transition-colors text-center font-semibold">
+                        Ver Elementos →
+                    </a>
+                    <a href="classes.html" class="flex-1 p-4 bg-blue-50 border border-blue-200 rounded-lg hover:bg-blue-100 transition-colors text-center font-semibold">
+                        Ver Classes →
+                    </a>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
